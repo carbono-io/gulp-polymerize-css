@@ -21,7 +21,7 @@ var polymerizeCss = require('gulp-polymerize-css'),
 
 gulp.task('styles', function(){
   return gulp.src('app/styles/style.css')
-    .pipe($.polymerizeCss({styleId:'custom-style'}))
+    .pipe(polymerizeCss({styleId:'custom-style'}))
     .pipe(rename('style.html'))
     .pipe(gulp.dest('dist/styles'));
 });
